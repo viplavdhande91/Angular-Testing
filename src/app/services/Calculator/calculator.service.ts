@@ -7,13 +7,14 @@ import { LoggerService } from '../Logger/logger.service';
 export class CalculatorService {
   constructor(private loggerService: LoggerService) {}
 
-  add(n1: number, n2: number) {
+  public add(n1: number, n2: number) {
     let result = n1 + n2;
-    this.loggerService.log('Add Operation is called');
+    this.loggerService.log("Addition operation called");
+    // this.loggerService.log("Addition operation called second time"); //WILL FAIL OUR TEST CASE
     return result;
   }
 
-  subtract(n1: number, n2: number) {
+  public subtract(n1: number, n2: number) {
     let result = n1 - n2;
     this.loggerService.log('Subtract Operation is called');
     return result;
