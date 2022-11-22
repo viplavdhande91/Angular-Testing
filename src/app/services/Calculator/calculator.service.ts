@@ -9,13 +9,13 @@ export class CalculatorService {
 
   add(n1: number, n2: number) {
     let result = n1 + n2;
-    this.loggerService.log('Add Operation is called');
+    this.loggerService.log('Add Operation is called'); //TO KEEP ADDITION LOGS
     return result;
   }
 
   subtract(n1: number, n2: number) {
     let result = n1 - n2;
-    this.loggerService.log('Subtract Operation is called');
+    this.loggerService.log('Subtract Operation is called'); //TO KEEP SUBTRACTION LOGS
     return result;
   }
 }
