@@ -8,11 +8,11 @@ import { Post } from 'src/app/models/Post';
 export class PostService {
   constructor(private http: HttpClient) {}
 
-  getPosts() {
+  public getPosts() {
     return this.http.get<Post[]>(`https://jsonplaceholder.typicode.com/posts`);
   }
 
-  deletePost(post: Post) {
+  public deletePost(post: Post) {
     return this.http.delete(
       `https://jsonplaceholder.typicode.com/post/${post.id}`
     );
